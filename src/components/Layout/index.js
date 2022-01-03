@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
+import Footer from "../Footer";
 import Navbar  from "../Navbar";
 
 function Layout() {
@@ -7,6 +8,7 @@ function Layout() {
       <div>
         <Navbar location={location}/>
         <Outlet />
+        <Footer />
       </div>
     );
   }
